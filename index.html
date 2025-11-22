@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>SII - Smart Innovative Ideas | Professional Website Development & AI Solutions</title>
+    <meta name="description"
+        content="Transform your business with professional website development, AI-powered tools, and innovative digital solutions. Fast delivery, beautiful designs, guaranteed results. Based in Nigeria." />
+    <meta name="keywords"
+        content="website development, web design, AI tools, chatbot integration, business website, portfolio website, landing page, Nigeria web developer, SII, Smart Innovative Ideas" />
+    <meta name="author" content="SII - Smart Innovative Ideas" />
+    <link rel="canonical" href="https://smartii.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smartii.com/" />
+    <meta property="og:title" content="SII - Smart Innovative Ideas | Professional Website Development" />
+    <meta property="og:description"
+        content="We build smart websites, tools & solutions for your business. Professional web development, AI integration, and digital products." />
+    <meta property="og:image" content="https://smartii.com/assets/images/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://smartii.com/" />
+    <meta name="twitter:title" content="SII - Smart Innovative Ideas | Website Development & AI Solutions" />
+    <meta name="twitter:description"
+        content="Transform your business with professional websites, AI tools, and innovative digital solutions." />
+    <meta name="twitter:image" content="https://smartii.com/assets/images/og-image.jpg" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            // theme: {
+            //     extend: {
+            //         colors: {
+            //             primary: 'hsl(221 83% 20%)',
+            //             'primary-foreground': 'hsl(210 40% 98%)',
+            //             background: 'hsl(0 0% 100%)',
+            //             foreground: 'hsl(222 47% 11%)',
+            //             muted: 'hsl(210 40% 96%)',
+            //             'muted-foreground': 'hsl(215 16% 47%)',
+            //             accent: 'hsl(210 40% 96%)',
+            //             'accent-foreground': 'hsl(222 47% 11%)',
+            //             border: 'hsl(214 32% 91%)',
+            //         }
+            //     }
+            // }
+
+            theme: {
+                extend: {
+
+                    colors: {
+                        primary: '#2563EB', // hsl(221 83% 53%)
+                        'primary-foreground': '#ffffff', // hsl(0 0% 100%)
+
+                        background: '#F8FAFC', // hsl(210 40% 98%)
+                        foreground: '#0F172A', // hsl(222 47% 11%)
+
+                        muted: '#EEF2FF', // hsl(226 100% 97%)
+                        'muted-foreground': '#6B7280', // hsl(220 9% 46%)
+
+                        accent: '#14B8A6', // hsl(173 80% 40%)
+                        'accent-foreground': '#ffffff', // hsl(0 0% 100%)
+
+                        border: '#E6EEF8', // hsl(213 56% 94%)
+                        ring: '#14B8A6' // use accent for focus rings
+                    }
+                }
+            }
+        }
+
+
+    </script>
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        }
+
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        .hover-scale {
+            transition: transform 0.2s;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        :root {
+            --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            --font-heading: "DM Sans", var(--font-sans);
+            --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+
+            /* optional size tokens (you can keep in tailwind config instead) */
+            --text-base: 1rem;
+            --line-height-base: 1.6;
+        }
+
+        html {
+            font-family: var(--font-sans);
+            font-size: var(--text-base);
+            line-height: var(--line-height-base);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Headings default to heading font */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: var(--font-mono);
+        }
+    </style>
+
+    <!-- Structured Data / JSON-LD Schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "SII - Smart Innovative Ideas",
+    "image": "https://smartii.com/assets/images/logo.png",
+    "@id": "https://smartii.com",
+    "url": "https://smartii.com",
+    "telephone": "+2348012345678",
+    "email": "hello@smartii.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Innovation Street, Tech Hub",
+      "addressLocality": "Lagos",
+      "addressCountry": "NG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 6.5,
+      "longitude": 3.3
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "16:00"
+      }
+    ],
+    "sameAs": [
+      "https://twitter.com/smartii",
+      "https://linkedin.com/company/smartii",
+      "https://github.com/smartii",
+      "https://facebook.com/smartii"
+    ],
+    "priceRange": "₦₦",
+    "description": "Professional website development, AI-powered tools, and innovative digital solutions for businesses of all sizes.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "50"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-background text-foreground">
+
+    <!-- 
+  ═══════════════════════════════════════════════════════════════════
+  CONFIGURATION SECTION - CHANGE THESE VALUES TO CUSTOMIZE YOUR SITE
+  ═══════════════════════════════════════════════════════════════════
+  -->
+    <script>
+        const CONFIG = {
+            COMPANY_NAME: "SII — Smart Innovative Ideas",
+            PHONE_NUMBER: "2348012345678", // International format without +
+            EMAIL: "hello@smartii.com",
+            ADDRESS: "123 Innovation Street, Tech Hub, Lagos, Nigeria",
+
+            // WhatsApp message templates (will be URL-encoded automatically)
+            waTemplates: {
+                book: "Hi, I want to book an appointment to discuss a website. Preferred date: [DATE]. Preferred time: [TIME]. My name: [NAME].",
+                quote: "Hi, please send a quote. Service: [SERVICE]. Requirements: [DETAILS]. Preferred product: [PRODUCT]. Deadline: [DATE]."
+            },
+
+            // Social media links - CHANGE THESE to your actual profiles
+            SOCIAL: {
+                twitter: "https://twitter.com/smartii",
+                linkedin: "https://linkedin.com/company/smartii",
+                github: "https://github.com/smartii",
+                facebook: "https://facebook.com/smartii"
+            }
+        };
+
+        // Helper function to build WhatsApp links
+        function buildWaLink(phone, message) {
+            return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        }
+
+        // Smooth scroll function
+        function smoothScrollTo(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <a id="floating-whatsapp" class="floating-whatsapp bg-green-500 text-white rounded-full p-4 shadow-lg hover-scale"
+        target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <!-- Header / Navigation -->
+    <header class="bg-primary text-primary-foreground shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="text-3xl">👀</div>
+                    <div>
+                        <h1 class="text-xl font-bold">SII*TECCH</h1>
+                        <p class="text-xs opacity-90">Smart Innovative Ideas</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" onclick="smoothScrollTo('about'); return false;"
+                        class="hover:opacity-80 transition-opacity">About</a>
+                    <a href="#services" onclick="smoothScrollTo('services'); return false;"
+                        class="hover:opacity-80 transition-opacity">Services</a>
+                    <a href="#products" onclick="smoothScrollTo('products'); return false;"
+                        class="hover:opacity-80 transition-opacity">Products</a>
+                    <a href="#pricing" onclick="smoothScrollTo('pricing'); return false;"
+                        class="hover:opacity-80 transition-opacity">Pricing</a>
+                    <a href="#reviews" onclick="smoothScrollTo('reviews'); return false;"
+                        class="hover:opacity-80 transition-opacity">Reviews</a>
+                    <a href="#contact" onclick="smoothScrollTo('contact'); return false;"
+                        class="hover:opacity-80 transition-opacity">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-primary-foreground">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#about" onclick="smoothScrollTo('about'); toggleMobileMenu(); return false;"
+                    class="block py-2 hover:opacity-80">About</a>
+                <a href="#services" onclick="smoothScrollTo('services'); toggleMobileMenu(); return false;"
+                    class="block py-2 hover:opacity-80">Services</a>
+                <a href="#products" onclick="smoothScrollTo('products'); toggleMobileMenu(); return false;"
+                    class="block py-2 hover:opacity-80">Products</a>
+                <a href="#pricing" onclick="smoothScrollTo('pricing'); toggleMobileMenu(); return false;"
+                    class="block py-2 hover:opacity-80">Pricing</a>
+                <a href="#reviews" onclick="smoothScrollTo('reviews'); toggleMobileMenu(); return false;"
+                    class="block py-2 hover:opacity-80">Reviews</a>
+                <a href="#contact" onclick="smoothScrollTo('contact'); toggleMobileMenu(); return false;"
+                    class="block py-2 hover:opacity-80">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary via-primary to-blue-950 text-primary-foreground py-20 md:py-32">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl md:text-6xl font-bold leading-tight">
+                        We Build Smart Websites, Tools & Solutions for Your Business
+                    </h2>
+                    <p class="text-lg opacity-90">
+                        From stunning landing pages to powerful AI tools, we deliver professional digital solutions that
+                        drive results. Fast, affordable, and built to impress.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a id="hero-book-btn"
+                            class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover-scale text-center"
+                            target="_blank" rel="noopener noreferrer">
+                            📅 Book Appointment
+                        </a>
+                        <a id="hero-whatsapp-btn"
+                            class="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover-scale text-center"
+                            target="_blank" rel="noopener noreferrer">
+                            💬 WhatsApp Us
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <!-- CHANGE THIS: Replace with your actual hero image -->
+                    <img src="assests/images/siibusinesslogo.jpg"
+                        alt="SII - Professional website development and AI solutions showcase"
+                        class="rounded-lg shadow-2xl" loading="lazy" />
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-muted">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center space-y-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">About SII</h2>
+                <p class="text-lg text-muted-foreground">
+                    <strong>Smart Innovative Ideas (SII)</strong> is your partner in digital transformation. We
+                    specialize in creating beautiful, functional websites and cutting-edge AI tools that help businesses
+                    thrive online.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="bg-background p-6 rounded-lg shadow-md">
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="font-bold text-xl mb-2">Fast Delivery</h3>
+                        <p class="text-muted-foreground">Projects completed in days, not months</p>
+                    </div>
+                    <div class="bg-background p-6 rounded-lg shadow-md">
+                        <div class="text-4xl mb-4">🎨</div>
+                        <h3 class="font-bold text-xl mb-2">Beautiful Designs</h3>
+                        <p class="text-muted-foreground">Modern, responsive, and user-friendly</p>
+                    </div>
+                    <div class="bg-background p-6 rounded-lg shadow-md">
+                        <div class="text-4xl mb-4">🤖</div>
+                        <h3 class="font-bold text-xl mb-2">AI-Powered</h3>
+                        <p class="text-muted-foreground">Leverage the latest AI technology</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 p-6 bg-background rounded-lg shadow-md text-left">
+                    <h3 class="font-bold text-xl mb-4 text-primary">📍 Office Hours & Location</h3>
+                    <p class="text-muted-foreground mb-2">
+                        <strong>Hours:</strong> Mon-Fri: 9AM - 6PM | Sat: 10AM - 4PM
+                    </p>
+                    <p class="text-muted-foreground" id="office-address"></p>
+
+                    <!-- CHANGE THIS: Replace with your actual Google Maps embed URL -->
+                    <div class="mt-4 rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7!2d3.3!3d6.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzAnMDAuMCJOIDPCsDE4JzAwLjAiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            class="w-full"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Our Services</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Website Development -->
+                <div class="bg-muted p-6 rounded-lg shadow-md hover-scale">
+                    <div class="text-4xl mb-4">🌐</div>
+                    <h3 class="font-bold text-xl mb-3 text-primary">Website Development</h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>✓ Landing Pages</li>
+                        <li>✓ Portfolio Websites</li>
+                        <li>✓ Business Websites</li>
+                        <li>✓ Event Websites</li>
+                        <li>✓ Personal Brand Pages</li>
+                        <li>✓ E-commerce Sites</li>
+                    </ul>
+                </div>
+
+                <!-- AI & Automation -->
+                <div class="bg-muted p-6 rounded-lg shadow-md hover-scale">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="font-bold text-xl mb-3 text-primary">AI & Automation</h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>✓ Chatbot Integration</li>
+                        <li>✓ AI Content Tools</li>
+                        <li>✓ Workflow Automation</li>
+                        <li>✓ Brand Quote Generator</li>
+                        <li>✓ AI Brainstorming</li>
+                        <li>✓ Custom AI Solutions</li>
+                    </ul>
+                </div>
+
+                <!-- Design & Marketing -->
+                <div class="bg-muted p-6 rounded-lg shadow-md hover-scale">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="font-bold text-xl mb-3 text-primary">Design & Marketing</h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>✓ SEO Optimization</li>
+                        <li>✓ Graphic Design</li>
+                        <li>✓ Social Media Banners</li>
+                        <li>✓ Logo Modifications</li>
+                        <li>✓ Brand Consultation</li>
+                        <li>✓ Website Redesigns</li>
+                    </ul>
+                </div>
+
+                <!-- Hosting & Maintenance -->
+                <div class="bg-muted p-6 rounded-lg shadow-md hover-scale">
+                    <div class="text-4xl mb-4">🔧</div>
+                    <h3 class="font-bold text-xl mb-3 text-primary">Hosting & Maintenance</h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>✓ Domain Registration</li>
+                        <li>✓ Web Hosting</li>
+                        <li>✓ Free Edits (1 month)</li>
+                        <li>✓ Regular Updates</li>
+                        <li>✓ Security Monitoring</li>
+                        <li>✓ Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-muted">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Our Products</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="bg-background p-6 rounded-lg shadow-md hover-scale">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="font-bold text-xl mb-2 text-primary">TheJavaScript
+                        School</h3>
+                    <p class="text-muted-foreground mb-4">Learn JavaScript from beginner to advanced with interactive
+                        tutorials</p>
+                    <!-- CHANGE THIS: Add your actual product link -->
+                    <a href="#" class="text-primary font-semibold hover:underline">Visit Product →</a>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg shadow-md hover-scale">
+                    <div class="text-4xl mb-4">🛠️</div>
+                    <h3 class="font-bold text-xl mb-2 text-primary">SII Tools</h3>
+                    <p class="text-muted-foreground mb-4">Collection of developer tools and utilities for faster
+                        development</p>
+                    <!-- CHANGE THIS: Add your actual product link -->
+                    <a href="#" class="text-primary font-semibold hover:underline">Visit Product →</a>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg shadow-md hover-scale">
+                    <div class="text-4xl mb-4">🔌</div>
+                    <h3 class="font-bold text-xl mb-2 text-primary">SII APIs</h3>
+                    <p class="text-muted-foreground mb-4">Powerful APIs for integrating advanced features into your apps
+                    </p>
+                    <!-- CHANGE THIS: Add your actual product link -->
+                    <a href="#" class="text-primary font-semibold hover:underline">Visit Product →</a>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg shadow-md hover-scale">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="font-bold text-xl mb-2 text-primary">Creator Tools</h3>
+                    <p class="text-muted-foreground mb-4">Tools for content creators to boost productivity and
+                        creativity</p>
+                    <!-- CHANGE THIS: Add your actual product link -->
+                    <a href="#" class="text-primary font-semibold hover:underline">Visit Product →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Tools Section -->
+    <section class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Developer Tools & Resources</h2>
+
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                <div class="bg-muted p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-3 text-primary">📦 Open Source</h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>• JavaScript Packages (NPM)</li>
+                        <li>• React UI Components</li>
+                        <li>• Code Snippet Libraries</li>
+                        <li>• Developer Templates</li>
+                    </ul>
+                </div>
+
+                <div class="bg-muted p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-3 text-primary">🔧 Tools & APIs</h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>• RESTful APIs</li>
+                        <li>• AI Integration SDK</li>
+                        <li>• React Starter Kits</li>
+                        <li>• Utility Functions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <!-- CHANGE THIS: Add your GitHub link -->
+                <a href="https://github.com/smartii" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center space-x-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover-scale">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    <span>Contribute on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio & Reviews Section -->
+    <section id="reviews" class="py-20 bg-muted">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Portfolio & Satisfied Clients</h2>
+
+            <!-- Portfolio Grid -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+                <!-- CHANGE THESE: Replace with your actual portfolio screenshots -->
+                <div class="bg-background rounded-lg shadow-md overflow-hidden hover-scale">
+                    <img src="/assets/images/portfolio-1.png" alt="E-commerce website project for fashion brand"
+                        class="w-full h-48 object-cover" loading="lazy" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-primary">Fashion E-commerce</h3>
+                        <p class="text-muted-foreground text-sm">Online store with payment integration</p>
+                        <a href="#" class="text-primary font-semibold text-sm hover:underline">View Live →</a>
+                    </div>
+                </div>
+
+                <div class="bg-background rounded-lg shadow-md overflow-hidden hover-scale">
+                    <img src="/assets/images/portfolio-2.png" alt="Portfolio website for creative professional"
+                        class="w-full h-48 object-cover" loading="lazy" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-primary">Creative Portfolio</h3>
+                        <p class="text-muted-foreground text-sm">Showcase for photographer & designer</p>
+                        <a href="#" class="text-primary font-semibold text-sm hover:underline">View Live →</a>
+                    </div>
+                </div>
+
+                <div class="bg-background rounded-lg shadow-md overflow-hidden hover-scale">
+                    <img src="/assets/images/portfolio-3.png" alt="Business consulting website with booking system"
+                        class="w-full h-48 object-cover" loading="lazy" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-primary">Business Consulting</h3>
+                        <p class="text-muted-foreground text-sm">Corporate site with booking system</p>
+                        <a href="#" class="text-primary font-semibold text-sm hover:underline">View Live →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-background p-6 rounded-lg shadow-md">
+                    <div class="flex mb-3">
+                        <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-muted-foreground mb-4 italic">"SII delivered our website in just 5 days! The quality
+                        is outstanding and the team was very professional."</p>
+                    <p class="font-bold text-primary">— Adebayo K.</p>
+                    <p class="text-sm text-muted-foreground">CEO, Tech Startup</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg shadow-md">
+                    <div class="flex mb-3">
+                        <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-muted-foreground mb-4 italic">"The AI chatbot they integrated has transformed our
+                        customer service. Highly recommend SII!"</p>
+                    <p class="font-bold text-primary">— Chioma O.</p>
+                    <p class="text-sm text-muted-foreground">Owner, Fashion Brand</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg shadow-md">
+                    <div class="flex mb-3">
+                        <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-muted-foreground mb-4 italic">"Affordable, fast, and beautiful. SII created exactly
+                        what we needed for our business."</p>
+                    <p class="font-bold text-primary">— Ibrahim M.</p>
+                    <p class="text-sm text-muted-foreground">Director, Consulting Firm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Pricing Plans</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Basic Plan -->
+                <div
+                    class="bg-muted p-8 rounded-lg shadow-md hover-scale border-2 border-transparent hover:border-primary transition-all">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Basic</h3>
+                    <div class="text-4xl font-bold mb-4">₦50,000</div>
+                    <p class="text-muted-foreground mb-6">Perfect for small businesses and personal brands</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Single-page website</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Mobile responsive</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Basic SEO</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Contact form</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>1 month free edits</span>
+                        </li>
+                    </ul>
+                    <a href="#"
+                        onclick="window.open(buildWaLink(CONFIG.PHONE_NUMBER, 'Hi, I want to get a quote for the Basic Package (₦50,000).'), '_blank'); return false;"
+                        class="block text-center bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover-scale">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Intermediate Plan -->
+                <div class="bg-primary text-primary-foreground p-8 rounded-lg shadow-xl transform scale-105 relative">
+                    <div
+                        class="absolute top-0 right-0 bg-green-500 text-white px-3 py-1 rounded-bl-lg text-sm font-bold">
+                        POPULAR
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Intermediate</h3>
+                    <div class="text-4xl font-bold mb-4">₦120,000</div>
+                    <p class="opacity-90 mb-6">For growing businesses needing more features</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Multi-page website (up to 5 pages)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Advanced SEO</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Blog integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Social media integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Analytics setup</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>2 months free edits</span>
+                        </li>
+                    </ul>
+                    <a href="#"
+                        onclick="window.open(buildWaLink(CONFIG.PHONE_NUMBER, 'Hi, I want to get a quote for the Intermediate Package (₦120,000).'), '_blank'); return false;"
+                        class="block text-center bg-white text-primary px-6 py-3 rounded-lg font-semibold hover-scale">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Advanced Plan -->
+                <div
+                    class="bg-muted p-8 rounded-lg shadow-md hover-scale border-2 border-transparent hover:border-primary transition-all">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Advanced</h3>
+                    <div class="text-4xl font-bold mb-4">₦250,000</div>
+                    <p class="text-muted-foreground mb-6">Complete solution with AI and e-commerce</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Unlimited pages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>E-commerce integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>AI chatbot</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Custom features</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Priority support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>3 months free edits</span>
+                        </li>
+                    </ul>
+                    <a href="#"
+                        onclick="window.open(buildWaLink(CONFIG.PHONE_NUMBER, 'Hi, I want to get a quote for the Advanced Package (₦250,000).'), '_blank'); return false;"
+                        class="block text-center bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover-scale">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="py-20 bg-muted">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">From Our Blog</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <article class="bg-background rounded-lg shadow-md overflow-hidden hover-scale">
+                    <img src="/assets/images/blog-1.png" alt="Blog post about business growth strategies"
+                        class="w-full h-48 object-cover" loading="lazy" />
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary uppercase">Business Tips</span>
+                        <h3 class="font-bold text-xl mt-2 mb-3">10 Ways to Grow Your Small Business Online</h3>
+                        <p class="text-muted-foreground mb-4">Discover proven strategies to boost your online presence
+                            and attract more customers...</p>
+                        <a href="#" class="text-primary font-semibold hover:underline">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="bg-background rounded-lg shadow-md overflow-hidden hover-scale">
+                    <img src="/assets/images/blog-2.png" alt="Blog post about AI technology trends"
+                        class="w-full h-48 object-cover" loading="lazy" />
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary uppercase">Technology</span>
+                        <h3 class="font-bold text-xl mt-2 mb-3">The Future of AI in Business Automation</h3>
+                        <p class="text-muted-foreground mb-4">How artificial intelligence is transforming the way
+                            businesses operate...</p>
+                        <a href="#" class="text-primary font-semibold hover:underline">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="bg-background rounded-lg shadow-md overflow-hidden hover-scale">
+                    <img src="/assets/images/blog-3.png" alt="Blog post about branding essentials"
+                        class="w-full h-48 object-cover" loading="lazy" />
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary uppercase">Branding</span>
+                        <h3 class="font-bold text-xl mt-2 mb-3">Essential Branding Tips for Startups</h3>
+                        <p class="text-muted-foreground mb-4">Learn how to create a memorable brand that resonates with
+                            your audience...</p>
+                        <a href="#" class="text-primary font-semibold hover:underline">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Frequently Asked Questions</h2>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="bg-muted p-6 rounded-lg">
+                    <summary class="font-bold text-lg cursor-pointer text-primary">How long does it take to build a
+                        website?</summary>
+                    <p class="mt-4 text-muted-foreground">Most projects are completed within 5-10 business days,
+                        depending on complexity. Simple landing pages can be ready in just 3 days!</p>
+                </details>
+
+                <details class="bg-muted p-6 rounded-lg">
+                    <summary class="font-bold text-lg cursor-pointer text-primary">Do you provide domain and hosting?
+                    </summary>
+                    <p class="mt-4 text-muted-foreground">Yes! We can help you register a domain and set up reliable
+                        hosting. We'll guide you through the entire process.</p>
+                </details>
+
+                <details class="bg-muted p-6 rounded-lg">
+                    <summary class="font-bold text-lg cursor-pointer text-primary">Are edits included after delivery?
+                    </summary>
+                    <p class="mt-4 text-muted-foreground">Absolutely! All packages include free edits for 1-3 months
+                        (depending on your plan). After that, we offer affordable maintenance packages.</p>
+                </details>
+
+                <details class="bg-muted p-6 rounded-lg">
+                    <summary class="font-bold text-lg cursor-pointer text-primary">What makes SII different from other
+                        developers?</summary>
+                    <p class="mt-4 text-muted-foreground">We combine speed, quality, and affordability. Plus, we offer
+                        AI tools and developer resources that other agencies don't provide.</p>
+                </details>
+
+                <details class="bg-muted p-6 rounded-lg">
+                    <summary class="font-bold text-lg cursor-pointer text-primary">How do payments work?</summary>
+                    <p class="mt-4 text-muted-foreground">We typically require 50% upfront and 50% upon completion. We
+                        accept bank transfers, card payments, and other secure payment methods.</p>
+                </details>
+
+                <details class="bg-muted p-6 rounded-lg">
+                    <summary class="font-bold text-lg cursor-pointer text-primary">Can you integrate AI chatbots into my
+                        website?</summary>
+                    <p class="mt-4 text-muted-foreground">Yes! We specialize in AI integration including chatbots,
+                        content generation tools, and automation systems.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary to-blue-950 text-primary-foreground">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Get In Touch</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                        <div class="space-y-3">
+                            <a href="#" id="contact-phone" class="flex items-center space-x-3 hover:opacity-80">
+                                <span class="text-2xl">📞</span>
+                                <span id="phone-display"></span>
+                            </a>
+                            <a href="#" id="contact-whatsapp" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center space-x-3 hover:opacity-80">
+                                <span class="text-2xl">💬</span>
+                                <span>WhatsApp Us</span>
+                            </a>
+                            <a href="#" id="contact-email" class="flex items-center space-x-3 hover:opacity-80">
+                                <span class="text-2xl">📧</span>
+                                <span id="email-display"></span>
+                            </a>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-2xl">📍</span>
+                                <span id="address-display"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" id="social-twitter" target="_blank" rel="noopener noreferrer"
+                                class="hover:opacity-80">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" id="social-linkedin" target="_blank" rel="noopener noreferrer"
+                                class="hover:opacity-80">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                    </path>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" id="social-github" target="_blank" rel="noopener noreferrer"
+                                class="hover:opacity-80">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" id="social-facebook" target="_blank" rel="noopener noreferrer"
+                                class="hover:opacity-80">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Contact Form -->
+                <div class="bg-white text-foreground p-8 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Send Quick Message</h3>
+                    <form id="contact-form" onsubmit="handleContactForm(event)">
+                        <div class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-semibold mb-1">Your Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-semibold mb-1">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-semibold mb-1">Message</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover-scale">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Maps -->
+            <div class="mt-12 max-w-6xl mx-auto">
+                <!-- CHANGE THIS: Replace with your actual Google Maps embed URL -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7!2d3.3!3d6.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzAnMDAuMCJOIDPCsDE4JzAwLjAiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+                    width="100%" height="450" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"
+                    class="shadow-xl"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-foreground text-background py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" onclick="smoothScrollTo('about'); return false;"
+                                class="hover:opacity-80">About Us</a></li>
+                        <li><a href="#services" onclick="smoothScrollTo('services'); return false;"
+                                class="hover:opacity-80">Services</a></li>
+                        <li><a href="#products" onclick="smoothScrollTo('products'); return false;"
+                                class="hover:opacity-80">Products</a></li>
+                        <li><a href="#pricing" onclick="smoothScrollTo('pricing'); return false;"
+                                class="hover:opacity-80">Pricing</a></li>
+                        <li><a href="#" class="hover:opacity-80">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:opacity-80">Terms of Service</a></li>
+                        <li><a href="#" class="hover:opacity-80">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:opacity-80">Refund Policy</a></li>
+                        <li><a href="#" class="hover:opacity-80">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li id="footer-phone"></li>
+                        <li id="footer-email"></li>
+                        <li id="footer-address"></li>
+                        <li><a href="#" id="footer-whatsapp" target="_blank" rel="noopener noreferrer"
+                                class="hover:opacity-80">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-background/20 pt-8 text-center">
+                <p id="copyright"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize dynamic content and links -->
+    <script>
+        // Set WhatsApp links
+        document.getElementById('floating-whatsapp').href = buildWaLink(CONFIG.PHONE_NUMBER, CONFIG.waTemplates.book);
+        document.getElementById('hero-book-btn').href = buildWaLink(CONFIG.PHONE_NUMBER, CONFIG.waTemplates.book);
+        document.getElementById('hero-whatsapp-btn').href = buildWaLink(CONFIG.PHONE_NUMBER, CONFIG.waTemplates.quote);
+
+        // Set contact information
+        document.getElementById('office-address').textContent = CONFIG.ADDRESS;
+        document.getElementById('phone-display').textContent = `+${CONFIG.PHONE_NUMBER}`;
+        document.getElementById('email-display').textContent = CONFIG.EMAIL;
+        document.getElementById('address-display').textContent = CONFIG.ADDRESS;
+
+        // Set contact links
+        document.getElementById('contact-phone').href = `tel:+${CONFIG.PHONE_NUMBER}`;
+        document.getElementById('contact-whatsapp').href = buildWaLink(CONFIG.PHONE_NUMBER, CONFIG.waTemplates.book);
+        document.getElementById('contact-email').href = `mailto:${CONFIG.EMAIL}`;
+
+        // Set social media links
+        document.getElementById('social-twitter').href = CONFIG.SOCIAL.twitter;
+        document.getElementById('social-linkedin').href = CONFIG.SOCIAL.linkedin;
+        document.getElementById('social-github').href = CONFIG.SOCIAL.github;
+        document.getElementById('social-facebook').href = CONFIG.SOCIAL.facebook;
+
+        // Set footer info
+        document.getElementById('footer-phone').innerHTML = `<a href="tel:+${CONFIG.PHONE_NUMBER}" class="hover:opacity-80">📞 +${CONFIG.PHONE_NUMBER}</a>`;
+        document.getElementById('footer-email').innerHTML = `<a href="mailto:${CONFIG.EMAIL}" class="hover:opacity-80">📧 ${CONFIG.EMAIL}</a>`;
+        document.getElementById('footer-address').textContent = `📍 ${CONFIG.ADDRESS}`;
+        document.getElementById('footer-whatsapp').href = buildWaLink(CONFIG.PHONE_NUMBER, CONFIG.waTemplates.book);
+
+        // Set copyright year
+        document.getElementById('copyright').textContent = `© ${new Date().getFullYear()} ${CONFIG.COMPANY_NAME}. All rights reserved.`;
+
+        // Contact form handler
+        function handleContactForm(e) {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const message = formData.get('message');
+
+            // Create mailto link
+            const mailtoLink = `mailto:${CONFIG.EMAIL}?subject=Contact from ${name}&body=${encodeURIComponent(message)}%0A%0AFrom: ${name}%0AEmail: ${email}`;
+            window.location.href = mailtoLink;
+
+            // Reset form
+            e.target.reset();
+            alert('Thank you! Your default email client should open. If not, please email us directly at ' + CONFIG.EMAIL);
+        }
+    </script>
+
+</body>
+
+</html>
